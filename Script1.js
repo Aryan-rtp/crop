@@ -1,5 +1,5 @@
 state = prompt("Enter your state")
-district = prompt("Enter your state")
+district = prompt("Enter your district")
 output = document.getElementById("output")
 fetch(`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd0000013b453042f482423a79fc5b2fae3da739&format=json&filters[state]=${encodeURIComponent(state)}&filters[district]=${encodeURIComponent(district)}`)
     .then((res) => res.json())
